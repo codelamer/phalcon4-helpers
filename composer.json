@@ -1,0 +1,22 @@
+{
+    "name": "codelamer/phalcon4-helpers",
+    "description": "Some usefull helpers",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alexey Sidorov",
+            "email": "lexikus@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "suggest": {
+        "vlucas/phpdotenv": "Required to use the Env class and env helper (^3.3)."
+    }
+
+}
