@@ -529,3 +529,22 @@ if ( ! function_exists( 'environment' ) ) {
 		return container()->getEnvironment();
 	}
 }
+
+
+if ( ! function_exists( 'isAndroid' ) ) {
+	function isAndroid() {
+		return env('CLIENT_DEVICE_TYPE') === 'android';
+	}
+}
+
+if ( ! function_exists( 'isIOS' ) ) {
+	function isIOS() {
+		return env('CLIENT_DEVICE_TYPE') === 'ios';
+	}
+}
+
+if ( ! function_exists( 'getRedirectType' ) ) {
+	function getRedirectType() {
+		return env('CLIENT_DEVICE_TYPE') === 'android' ? 'html' : 'http';
+	}
+}
